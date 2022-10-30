@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import EmptyPage from './components/EmptyPage';
+import Header from './components/Header';
+import List from './components/List';
+import GuGuDan from './components/GuGuDan/GuGuDan';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path='/' element={<List />} />
+          <Route path='/games/:games' element={<GuGuDan />} />
+          <Route path='*' element={<EmptyPage />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
