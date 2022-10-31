@@ -86,7 +86,7 @@ class Lotto extends Component {
     }
 }
 
-const { useState, useRef, useEffect, useMemo, useCallback } = React;
+// const { useState, useRef, useEffect, useMemo, useCallback } = React;
 // const Lotto = () => {
 //     const lottoNumbers = useMemo(() => getWinNumbers(), []);
 //     const [winNumbers, setWinNumbers] = useState(lottoNumbers);

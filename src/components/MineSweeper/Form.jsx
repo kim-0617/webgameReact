@@ -26,7 +26,7 @@ const Form = memo(() => {
             col,
             mine,
         });
-    }, [row, col, mine,]);
+    }, [row, col, mine]);
 
     return (
         <div className="form">
