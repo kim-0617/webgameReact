@@ -1,7 +1,22 @@
 .game__list {
     padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .category {
-    font-size: 30px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    width: 23%;
+    border: 3px solid #08f;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+.category:hover {
+    color: #fff;
+    background-color: #08f;
 }
