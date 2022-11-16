@@ -1,0 +1,30 @@
+body {
+  overflow-x: hidden;
+  background-image: url("../img/bg.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 120vh;
+}
+
+@font-face {
+  font-family: "LABDigital";
+  font-weight: normal;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/fontlab/LABDigital.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/fontlab/LABDigital.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/fontlab/LABDigital.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/fontlab/LABDigital.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/fontlab/LABDigital.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  overflow: 0;
+  box-sizing: border-box;
+  font-family: "LABDigital";
+}

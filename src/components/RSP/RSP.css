@@ -1,71 +1,65 @@
 .rsp__wrap {
-    padding: 20px;
-    width: 500px;
-    height: 700px;
-    animation: flicker 1.5s infinite alternate;
-    margin: 0 auto;
-    margin-top: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 500px;
+  height: 500px;
+  animation: flicker 1.5s infinite alternate;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  border-radius: 5px;
 }
 
-
 #computer {
-    width: 142px;
-    height: 200px;
-    background-position: 0 0;
-    margin-bottom: 20px;
+  width: 142px;
+  height: 200px;
+  background-position: 0 0;
+  margin-bottom: 20px;
 }
 
 .button {
-    display: inline-block;
-    padding: 3px 20px 5px 20px;
-    color: #fff;
-    background-color: #08f;
-    margin: 0 auto;
-    width: 100px;
-    height: 45px;
-    border-radius: 30px;
-    transition: all 300ms;
-    margin: 20px 10px 30px 10px;
+  display: inline-block;
+  padding: 3px 20px 5px 20px;
+  color: #fff;
+  background-color: #08f;
+  margin: 0 auto;
+  width: 100px;
+  height: 45px;
+  border-radius: 30px;
+  transition: all 300ms;
+  margin: 20px 10px 30px 10px;
 }
 
 .button:hover {
-    color: #08f;
-    background-color: #fff;
+  color: #08f;
+  background-color: #fff;
 }
 
 .rsp__result {
-    margin-top: 20px;
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 40px;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 40px;
 }
 
 .rsp__score {
-    font-size: 24px;
-    font-weight: 700;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 @keyframes flicker {
-
-    0%,
-    19%,
-    21%,
-    23%,
-    25%,
-    54%,
-    56%,
-    100% {
-        box-shadow:
-            0 0 .5rem #fff,
-            inset 0 0 .5rem #fff,
-            0 0 2rem #08f,
-            inset 0 0 2rem #08f,
-            0 0 4rem #08f,
-            inset 0 0 4rem #08f;
-    }
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 2rem #08f,
+      inset 0 0 2rem #08f, 0 0 4rem #08f, inset 0 0 4rem #08f;
+  }
 }

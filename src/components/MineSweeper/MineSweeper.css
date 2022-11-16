@@ -1,94 +1,99 @@
 .m__wrap {
-    padding: 20px;
-    width: 800px;
-    height: 900px;
-    animation: flicker 1.5s infinite alternate;
-    margin: 0 auto;
-    margin-top: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 700px;
+  height: 700px;
+  animation: flicker 1.5s infinite alternate;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  border-radius: 5px;
 }
 
 .m__wrap table {
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 .m__wrap td {
-    border: 1px solid #000;
-    width: 50px;
-    height: 50px;
-    text-align: center;
+  border: 1px solid #000;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: rgb(240, 46, 46);
+  font-weight: bold;
 }
 
 .m__wrap .form {
-    text-align: center;
+  text-align: center;
+}
+
+.m__wrap label {
+  font-size: 22px;
 }
 
 .m__wrap input {
-    width: 80px;
-    height: 30px;
-    text-align: center;
-    border-radius: 20px;
-    margin: 5px 10px;
-    padding-left: 10px;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  margin: 5px 10px;
+  padding-left: 10px;
+  border: 0;
+  background-color: transparent;
+  font-size: 20px;
 }
 
 .m__wrap .input__wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .m__wrap .button {
-    display: block;
-    padding: 3px 20px 5px 20px;
-    color: #fff;
-    background-color: #08f;
-    margin: 0 auto;
-    width: 100px;
-    height: 30px;
-    border-radius: 30px;
-    transition: all 300ms;
-    margin-top: 20px;
-    margin-bottom: 30px;
+  display: block;
+  padding: 3px 20px 5px 20px;
+  color: #fff;
+  background-color: #36374e;
+  margin: 0 auto;
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+  transition: all 300ms;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 20px;
 }
 
 .m__wrap .button:hover {
-    color: #08f;
-    background-color: #fff;
+  color: #36374e;
+  background-color: rgb(202, 202, 202);
 }
 
 .m__wrap .result {
-    margin-top: 30px;
-    font-size: 30px;
-    font-weight: 700;
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: 700;
 }
 
-.m__wrap  .timer {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 10px;
+.m__wrap .timer {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 @keyframes flicker {
-
-    0%,
-    19%,
-    21%,
-    23%,
-    25%,
-    54%,
-    56%,
-    100% {
-        box-shadow:
-            0 0 .5rem #fff,
-            inset 0 0 .5rem #fff,
-            0 0 2rem #08f,
-            inset 0 0 2rem #08f,
-            0 0 4rem #08f,
-            inset 0 0 4rem #08f;
-    }
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 1rem #08f,
+      inset 0 0 1rem #08f, 0 0 2rem #08f, inset 0 0 1rem #08f;
+  }
 }

@@ -1,58 +1,56 @@
 .wrap {
-    padding: 20px;
-    width: 800px;
-    height: 800px;
-    animation: flicker 1.5s infinite alternate;
-    margin: 0 auto;
-    margin-top: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 500px;
+  height: 500px;
+  animation: flicker 1.5s infinite alternate;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  border-radius: 5px;
 }
 
 #screen {
-    width: 500px;
-    height: 500px;
-    text-align: center;
-    user-select: none;
-    font-size: 25px;
-    margin-bottom: 30px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  user-select: none;
+  font-size: 25px;
+  margin-bottom: 35px;
 }
 
 #screen.waiting {
-    background-color: aqua;
+  background-color: aqua;
 }
 
 #screen.ready {
-    background-color: red;
-    color: #fff;
+  background-color: red;
+  color: #fff;
 }
 
 #screen.now {
-    background-color: greenyellow;
+  background-color: greenyellow;
 }
 
 .time {
-    text-align: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 @keyframes flicker {
-
-    0%,
-    19%,
-    21%,
-    23%,
-    25%,
-    54%,
-    56%,
-    100% {
-        box-shadow:
-            0 0 .5rem #fff,
-            inset 0 0 .5rem #fff,
-            0 0 2rem #08f,
-            inset 0 0 2rem #08f,
-            0 0 4rem #08f,
-            inset 0 0 4rem #08f;
-    }
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 2rem #08f,
+      inset 0 0 2rem #08f, 0 0 4rem #08f, inset 0 0 4rem #08f;
+  }
 }
