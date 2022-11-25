@@ -8,7 +8,7 @@ const { useEffect, useMemo, useReducer, memo, createContext } = React;
 export const TableContext = createContext({
   tableData: [],
   halted: true,
-  dispatch: () => {},
+  dispatch: () => { },
 });
 export const CODE = {
   MINE: -7,
@@ -169,6 +169,7 @@ const reducer = (state, action) => {
       };
     }
     case CLICK_MINE: {
+      alert("패배!")
       const tableData = [...state.tableData];
       tableData[action.row] = [...state.tableData[action.row]];
       tableData[action.row][action.col] = CODE.CLICK_MINE;
@@ -281,7 +282,7 @@ const MineSweeper = memo(() => {
         {state.halted === false ? null : <Form />}
         <div className="timer">{state.timer}</div>
         {state.halted === true ? null : <Table />}
-        <div className="result">{state.result}</div>
+        {state.halted === true ? <div className="result">{state.result}</div> : null}
       </div>
     </TableContext.Provider>
   );
